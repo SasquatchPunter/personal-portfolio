@@ -9,19 +9,19 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
 
-      - run: echo $PWD | ls
+      - run: echo $PWD ; ls
 
       - name: Setup Node
         uses: actions/setup-node@v3
         with:
           node-version: 16
 
-      - run: echo $PWD | ls
+      - run: echo $PWD ; ls
 
       - name: Install Dependencies
         run: npm ci
 
-      - run: echo $PWD | ls
+      - run: echo $PWD ; ls
 
       - name: Generate Markup
         run: npm run export
