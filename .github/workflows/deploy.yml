@@ -17,6 +17,8 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
+      - run: echo $PWD
+
       - name: Generate Markup
         run: npm run export
         env:
