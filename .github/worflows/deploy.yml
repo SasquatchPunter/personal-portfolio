@@ -1,0 +1,10 @@
+name: Test
+on: push
+
+jobs:
+  print-context:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Secrets Context
+        run: echo ${{secrets.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}} |
+        echo ${{secrets.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}}
