@@ -10,6 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Secrets Context
-        run: |
-        echo ${{env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}}
-        echo ${{env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}}
+        run: echo ${{env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN}} | echo ${{env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID}}
