@@ -1,9 +1,5 @@
 import Layout from "../../components/Layout";
-import {
-  getPostById,
-  getPostBySlug,
-  getPosts,
-} from "../../lib/data/blog/query";
+import { getPostBySlug, getPosts } from "../../lib/data/blog/query";
 
 export default function BlogPostPage({ title }) {
   return (
