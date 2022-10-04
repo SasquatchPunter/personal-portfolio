@@ -1,5 +1,9 @@
-name: Test
-on: push
+name: CI
+on:
+  - push
+  - repository_dispatch
+    types: 
+      - contentful-publish-event
 
 jobs:
   deploy:
