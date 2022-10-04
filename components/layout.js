@@ -1,5 +1,5 @@
 import Head from "next/head";
-import HeaderNav from "./HeaderNav";
+import HeaderNav from "./headerNav";
 
 export default function Layout({ pageTitle = "Home", children }) {
   return (
