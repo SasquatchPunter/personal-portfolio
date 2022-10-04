@@ -4,7 +4,7 @@ import { getPostBySlug, getPosts } from "../../lib/data/blog/query";
 export default function BlogPostPage({ title }) {
   return (
     <Layout pageTitle={title}>
-      <h1>{title}</h1>
+      <h1 className="text-2xl">{title}</h1>
     </Layout>
   );
 }

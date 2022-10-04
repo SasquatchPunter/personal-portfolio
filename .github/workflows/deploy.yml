@@ -17,8 +17,6 @@ jobs:
       - name: Install Dependencies
         run: npm ci
 
-      - run: npm install next@canary
-
       - name: Generate Markup
         run: npm run export
         env:
