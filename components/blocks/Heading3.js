@@ -1,3 +1,3 @@
 export default function Heading3({ children }) {
-  return <h3>{children}</h3>;
+  return <h3 className="text-2xl">{children}</h3>;
 }
