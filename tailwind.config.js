@@ -6,6 +6,12 @@ module.exports = {
   ],
   theme: {
     extend: {},
+    backgroundSize: {
+      auto: "auto",
+      cover: "cover",
+      contain: "contain",
+      screen: "100vh",
+    },
   },
   plugins: [],
 };
