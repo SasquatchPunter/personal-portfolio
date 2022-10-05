@@ -5,12 +5,15 @@ module.exports = {
     "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
-    extend: {},
+    extend: {
+      borderRadius: {
+        inherit: "inherit",
+      },
+    },
     backgroundSize: {
       auto: "auto",
       cover: "cover",
       contain: "contain",
-      screen: "100vh",
     },
   },
   plugins: [],

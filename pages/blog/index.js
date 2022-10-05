@@ -1,15 +1,22 @@
 import Layout from "../../components/Layout";
+import BlogPostCard from "../../components/BlogPostCard";
+
 import Link from "next/link";
 import { getPosts } from "../../lib/data/blog/query";
 
 export default function BlogHomePage({ posts }) {
   return (
     <Layout pageTitle="Blog Welcome Page">
-      <h1>Blog Home</h1>
-      <ul>
-        {posts.map(({ slug, title }) => (
-          <li key={slug}>
-            <Link href={`/blog/${slug}`}>{title}</Link>
+      <ul className="w-fit p-4 m-auto">
+        {posts.map((p) => (
+          <li className="[&:not(:last-child)]:mb-4" key={p.slug}>
+            <BlogPostCard
+              slug={p.slug}
+              title={p.title}
+              author={p.author ?? "Anonymous"}
+              publishedAt={p.sys.publishedAt}
+              img={p.mainImage}
+            ></BlogPostCard>
           </li>
         ))}
       </ul>
