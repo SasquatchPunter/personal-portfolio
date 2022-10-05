@@ -1,7 +1,6 @@
 import Layout from "../../components/Layout";
 import BlogPostCard from "../../components/BlogPostCard";
 
-import Link from "next/link";
 import { getPosts } from "../../lib/data/blog/query";
 
 export default function BlogHomePage({ posts }) {
