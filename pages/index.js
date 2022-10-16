@@ -1,11 +1,7 @@
 import Layout from "../components/Layout";
 
 export default function IndexPage() {
-  return (
-    <Layout pageTitle="Home">
-      <h1>Home</h1>
-    </Layout>
-  );
+  return <Layout pageTitle="Home"></Layout>;
 }
 
 export async function getStaticProps() {

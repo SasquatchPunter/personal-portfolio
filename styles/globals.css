@@ -7,7 +7,7 @@
     -webkit-tap-highlight-color: transparent;
   }
   a:active {
-    -webkit-tap-highlight-color: ;
+    -webkit-tap-highlight-color: transparent;
   }
 }
 
@@ -16,3 +16,5 @@
     padding-bottom: env(safe-area-inset-bottom);
   }
 }
+
+@import "./typography.css";

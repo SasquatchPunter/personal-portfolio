@@ -3,12 +3,12 @@ import HeaderNav from "./HeaderNav";
 
 export default function Layout({ pageTitle = "Home", children }) {
   return (
-    <div className="w-full min-h-screen bg-stone-900 text-white">
+    <div className="w-full min-h-screen bg-stone-900 text-cyan-100 font-kanit">
       <Head>
         <title>{"JE | " + pageTitle}</title>
       </Head>
       <HeaderNav />
-      <main>{children}</main>
+      <main className="md:w-1/2 m-auto">{children}</main>
     </div>
   );
 }
