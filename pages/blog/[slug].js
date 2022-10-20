@@ -1,12 +1,18 @@
-import Layout from "../../components/Layout";
 import BlogPost from "../../components/BlogPost";
 import { getPostBySlug, getPosts } from "../../lib/data/blog/query";
+import PageWrapper from "../../components/PageWrapper";
+import MainContent from "../../components/MainContent";
+import SiteNavWrapper from "../../components/SiteNavWrapper";
 
 export default function BlogPostPage({ post }) {
   return (
-    <Layout pageTitle={post.title}>
-      <BlogPost post={post}></BlogPost>
-    </Layout>
+    <PageWrapper title={post.title}>
+      <SiteNavWrapper>
+        <MainContent>
+          <BlogPost post={post}></BlogPost>
+        </MainContent>
+      </SiteNavWrapper>
+    </PageWrapper>
   );
 }
 

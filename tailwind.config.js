@@ -21,9 +21,6 @@ module.exports = {
         "screen-1/2": "50vh",
         "screen-3/4": "75vh",
       },
-      zIndex: {
-        1: "1",
-      },
     },
     backgroundSize: {
       auto: "auto",

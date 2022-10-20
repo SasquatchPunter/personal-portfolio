@@ -3,7 +3,7 @@ import Link from "next/link";
 export default function BlogPostCard({ post }) {
   const publishDate = new Date(post.sys.publishedAt).toDateString();
   return (
-    <article className="border-cyan-200 border-2 rounded-xl overflow-clip">
+    <article className="w-full">
       <Link href={`/blog/${post.slug}`}>
         <a>
           <img src={post.mainImage.url} alt={post.mainImage.description} />
