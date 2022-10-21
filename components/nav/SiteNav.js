@@ -6,7 +6,7 @@ export default function SiteNav({}) {
   return (
     <menu
       style={siteNav.open ? { opacity: 1, pointerEvents: "auto" } : undefined}
-      className="fixed flex flex-col gap-4 justify-center items-center w-full h-screen top-0 bg-black/60 backdrop-blur-md z-40 opacity-0 pointer-events-none duration-200"
+      className="fixed flex flex-col gap-4 justify-center items-center w-full h-screen top-0 bg-black/80 z-40 opacity-0 pointer-events-none duration-200"
     >
       <SiteNavLink href="/about">About</SiteNavLink>
       <SiteNavLink href="/work">My Work</SiteNavLink>
