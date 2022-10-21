@@ -1,22 +1,15 @@
-import BlogCard from "../../components/BlogCard";
-
 import { getPosts } from "../../lib/data/blog/query";
 import PageWrapper from "../../components/PageWrapper";
 import MainContent from "../../components/MainContent";
 import SiteNavWrapper from "../../components/SiteNavWrapper";
+import BlogCardList from "../../components/BlogCardList";
 
 export default function BlogHomePage({ posts }) {
   return (
     <PageWrapper title="Blog">
       <SiteNavWrapper>
         <MainContent>
-          <ul className="w-fit p-4 m-auto">
-            {posts.map((post) => (
-              <li className="[&:not(:last-child)]:mb-4" key={post.slug}>
-                <BlogCard post={post}></BlogCard>
-              </li>
-            ))}
-          </ul>
+          <BlogCardList posts={posts} />
         </MainContent>
       </SiteNavWrapper>
     </PageWrapper>
