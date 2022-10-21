@@ -16,7 +16,7 @@ export default function IndexPage({}) {
               renderer={renderer}
             />
             <div className="w-full h-full absolute flex justify-center items-center">
-              <h1 className="text-6xl md:text-9xl font-bold w-min text-pink-500">
+              <h1 className="text-6xl md:text-9xl font-bold w-max text-pink-500">
                 Hi,
                 <br />
                 I'm Jeremy

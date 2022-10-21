@@ -32,9 +32,12 @@ export default function Canvas({
   const canvas = useRef(null);
 
   useEffect(() => {
+    const renderRef = renderer(canvas.current); // provides cleanup function
+
     const handleResize = () => {
+      renderRef();
       resizeToDisplay(canvas.current);
-      renderer(canvas.current);
+      renderRef = renderer(canvas.current);
     };
 
     if (resize) {
@@ -42,9 +45,9 @@ export default function Canvas({
     }
 
     handleResize();
-    renderer(canvas.current);
 
     return () => {
+      renderRef();
       window.removeEventListener("resize", handleResize);
     };
   }, []);

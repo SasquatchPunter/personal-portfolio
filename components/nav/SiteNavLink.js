@@ -10,7 +10,9 @@ export default function SiteNavLink({ href, children }) {
   };
   return (
     <Link href={href}>
-      <a onClick={onClick}>{children}</a>
+      <a className="text-xl font-bold" onClick={onClick}>
+        {children}
+      </a>
     </Link>
   );
 }
