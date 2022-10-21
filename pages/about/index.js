@@ -1,19 +1,14 @@
 import MainContent from "../../components/MainContent";
 import PageWrapper from "../../components/PageWrapper";
 import SiteNavWrapper from "../../components/SiteNavWrapper";
-import Canvas from "../../components/Canvas";
-import triRenderer from "../../lib/renders/triBackgroundRender";
+import PageTitleHeader from "../../components/PageTitleHeader";
 
 export default function AboutPage() {
   return (
     <PageWrapper title="About Me">
       <SiteNavWrapper>
         <MainContent>
-          <Canvas
-            className="w-full h-screen-1/2"
-            resize
-            renderer={triRenderer}
-          />
+          <PageTitleHeader>About</PageTitleHeader>
         </MainContent>
       </SiteNavWrapper>
     </PageWrapper>

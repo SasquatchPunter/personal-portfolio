@@ -1,4 +1,5 @@
 import { useAppContext } from "../../contexts/AppContext";
+import VendorLink from "../VendorLink";
 import SiteNavLink from "./SiteNavLink";
 
 export default function SiteNav({}) {
@@ -12,6 +13,11 @@ export default function SiteNav({}) {
       <SiteNavLink href="/work">My Work</SiteNavLink>
       <SiteNavLink href="/blog">Blog</SiteNavLink>
       <SiteNavLink href="/contact">Contact</SiteNavLink>
+      <div className="flex flex-row gap-4 absolute bottom-0 m-8">
+        <VendorLink className="w-8 h-8" vendor="github" />
+        <VendorLink className="w-8 h-8" vendor="linkedin" />
+        <VendorLink className="w-8 h-8" vendor="codepen" />
+      </div>
     </menu>
   );
 }
