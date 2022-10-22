@@ -8,7 +8,7 @@ export default function BlogCardList({ posts }) {
   };
 
   return (
-    <section className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
+    <section className="sm:p-4 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
       {populate()}
     </section>
   );
