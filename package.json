@@ -8,10 +8,7 @@
     "dev": "npx next dev",
     "start": "npx next start",
     "build": "npx next build",
-    "export": "npm run build && npx next export",
-    "test:blog:client": "node ./lib/data/blog/graphql-request-client",
-    "test:blog:query": "node ./lib/data/blog/query",
-    "test:blog:render": "node ./lib/data/blog/render"
+    "export": "npm run build && npx next export"
   },
   "author": "",
   "license": "ISC",

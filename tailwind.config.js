@@ -39,5 +39,5 @@ module.exports = {
       "icon-sm": "2px 2px 5px black",
     },
   },
-  plugins: [],
+  plugins: [require("./lib/tailwind/plugins/transform3d")],
 };

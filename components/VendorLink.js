@@ -3,8 +3,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { AiFillCodepenCircle } from "react-icons/ai";
 
 export default function VendorLink({ className, vendor = "github" }) {
-  const baseClass =
-    "hover:scale-110 hover:-translate-y-0.5 hover:drop-shadow-icon-sm duration-200 active:text-pink-500";
+  const baseClass = "active:text-pink-500";
 
   const init = () => {
     switch (vendor) {
