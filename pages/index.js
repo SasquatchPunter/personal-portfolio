@@ -2,7 +2,8 @@ import Canvas from "../components/Canvas";
 import MainContent from "../components/MainContent";
 import PageWrapper from "../components/PageWrapper";
 import SiteNavWrapper from "../components/SiteNavWrapper";
-import renderer from "../lib/renders/triBackgroundRender";
+// import renderer from "../lib/renders/triBackgroundRender";
+import renderer from "../lib/renders/landingPageRender";
 
 export default function IndexPage({}) {
   return (
