@@ -6,7 +6,7 @@ export default function HeaderNav({}) {
   return (
     <nav className="w-full h-full flex justify-between items-center m-auto text-xl">
       <SiteNavLink href="/">
-        <Icon />
+        <Icon className="w-8 h-8" />
       </SiteNavLink>
 
       <SiteNavButton />
