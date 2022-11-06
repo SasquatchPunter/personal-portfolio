@@ -11,7 +11,7 @@ export default function SiteNavLink({ href, children }) {
   return (
     <Link href={href}>
       <a
-        className="text-xl font-bold hover:scale-110 duration-100"
+        className="text-xl font-bold hover:scale-110 duration-100 text-center"
         onClick={onClick}
       >
         {children}

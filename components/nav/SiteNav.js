@@ -19,7 +19,10 @@ export default function SiteNav({}) {
       style={siteNav.open ? { opacity: 1, pointerEvents: "auto" } : undefined}
       className={menuClass}
     >
-      <nav ref={tiltChild} className="flex flex-col gap-4 transform-3d">
+      <nav
+        ref={tiltChild}
+        className="flex flex-col gap-4 transform-3d transform-preserve [&>*]:transform-3d [*>:hover]:rotate-y-45"
+      >
         <SiteNavLink href="/about">About</SiteNavLink>
         <SiteNavLink href="/work">My Work</SiteNavLink>
         <SiteNavLink href="/blog">Blog</SiteNavLink>
@@ -27,7 +30,7 @@ export default function SiteNav({}) {
       </nav>
       <nav
         ref={tiltChild}
-        className="flex flex-row gap-4 absolute bottom-0 m-8 transform-3d"
+        className="flex flex-row gap-4 absolute bottom-0 m-8 transform-3d transform-preserve"
       >
         <VendorLink className={vendorLinkClass} vendor="github" />
         <VendorLink className={vendorLinkClass} vendor="linkedin" />

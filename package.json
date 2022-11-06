@@ -17,6 +17,7 @@
     "@contentful/rich-text-types": "^15.13.2",
     "cross-fetch": "^3.1.5",
     "dotenv": "^16.0.3",
+    "file-loader": "^6.2.0",
     "graphiql": "^2.0.8",
     "graphql": "^16.6.0",
     "graphql-request": "^5.0.0",
@@ -24,9 +25,12 @@
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
     "react-icons": "^4.6.0",
-    "sass": "^1.55.0"
+    "sass": "^1.55.0",
+    "svg-url-loader": "^8.0.0",
+    "url-loader": "^4.1.1"
   },
   "devDependencies": {
+    "@svgr/webpack": "^6.5.1",
     "autoprefixer": "^10.4.12",
     "postcss": "^8.4.17",
     "tailwindcss": "^3.1.8"

@@ -1,31 +1,18 @@
-import Canvas from "../components/Canvas";
+import LandingSpinner from "../components/LandingSpinner";
 import MainContent from "../components/MainContent";
 import PageWrapper from "../components/PageWrapper";
-import SiteNavWrapper from "../components/SiteNavWrapper";
-// import renderer from "../lib/renders/triBackgroundRender";
-import renderer from "../lib/renders/landingPageRender";
+import SiteHeader from "../components/SiteHeader";
 
 export default function IndexPage({}) {
   return (
     <PageWrapper title="Home">
-      <SiteNavWrapper>
-        <MainContent>
-          <section className="h-screen relative">
-            <Canvas
-              className="w-full h-full absolute top-0"
-              resize
-              renderer={renderer}
-            />
-            <div className="w-full h-full absolute flex justify-center items-center">
-              <h1 className="text-6xl md:text-9xl font-bold w-max text-pink-500">
-                Hi,
-                <br />
-                I'm Jeremy
-              </h1>
-            </div>
-          </section>
-        </MainContent>
-      </SiteNavWrapper>
+      {/* <SiteNavWrapper></SiteNavWrapper> */}
+      <MainContent>
+        <section className="h-screen relative flex flex-col items-center justify-center">
+          <LandingSpinner />
+        </section>
+        <SiteHeader />
+      </MainContent>
     </PageWrapper>
   );
 }
