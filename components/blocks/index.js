@@ -1,5 +1,4 @@
 import Document from "./Document";
-import EmbeddedAsset from "./EmbeddedAsset";
 import EmbeddedEntry from "./EmbeddedEntry";
 import Heading1 from "./Heading1";
 import Heading2 from "./Heading2";
@@ -16,7 +15,6 @@ import UL_List from "./UL_List";
 
 module.exports = {
   Document,
-  EmbeddedAsset,
   EmbeddedEntry,
   Heading1,
   Heading2,

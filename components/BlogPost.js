@@ -11,7 +11,7 @@ export default function BlogPost({ post }) {
         image={post.mainImage}
         publishDate={publishDate}
       />
-      {renderBlogPost(post.body.json)}
+      {renderBlogPost(post.body.json, post.body.links)}
     </article>
   );
 }

@@ -18,6 +18,8 @@ export default function BlogPostPage({ post }) {
 
 export async function getStaticProps({ params: { slug } }) {
   const post = await getPostBySlug(slug);
+  // console.log(post.body.json.content);
+  // console.log(post.body.links.entries.inline);
   return { props: { post } };
 }
 

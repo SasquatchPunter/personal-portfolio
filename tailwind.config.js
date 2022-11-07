@@ -7,6 +7,12 @@ module.exports = {
   mode: "jit",
   theme: {
     extend: {
+      strokeWidth: {
+        3: "3px",
+        4: "4px",
+        5: "5px",
+        10: "10px",
+      },
       colors: {
         primary: {
           1: "#3DDC97",
