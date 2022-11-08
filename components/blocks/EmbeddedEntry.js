@@ -5,7 +5,15 @@ export default function EmbeddedEntry({ entry }) {
 
   switch (type) {
     case "CodeSnippet":
-      return <CodeSnippet language={entry.language}>{entry.body}</CodeSnippet>;
+      return (
+        <CodeSnippet
+          language={entry.language}
+          name={entry.name}
+          showLineNumbers={entry.showLineNumbers}
+        >
+          {entry.body}
+        </CodeSnippet>
+      );
     default:
       return undefined;
   }
